@@ -1,37 +1,31 @@
 #!/bin/bash
-echo "Welcome Corporate Slave <3<3"
-args=()
+
 get_time() {
-	local current_time=$(date +"%H:%M:%S")
-	echo $current_time
+	echo $(date +"%H:%M:%S")
 }
 get_date(){
-	local current_date=$(date +"%Y-%m-%d")
-	echo $current_date
+	echo $(date +"%Y-%m-%d")
 }
-show_data(){
-	for items in ${args[@]}; do
-	echo "content-->$items"
+data_show(){
+	for items in "${args[@]}"; do
+		echo "content-->$items"
 	done
 }
+date_generate(){
+	echo "generating data, check report"
+	data_show
+}
 
+echo 'Welcome Corporate Slave <3<3'
+echo 'Use "[project_name] [start]" to start recording time:'
 
-
-echo "Use \"[proecjt_name] [start]\" to start recorting time:"
 while true; do
-	read -r value
-	if [[ "$value" = "end" ]];then
+	read -r alue
+	if [[ "$value" == "end" ]]; then
 		break
 	fi
 	args+=("$value")
 	echo "entered -> $value <-"
 done
 
-echo "you've enterd the follwing values"
-for items in ${args[@]}; do
-	echo "$items"
-done
-
-show_data
-
-# generate report
+date_generate

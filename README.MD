@@ -25,3 +25,46 @@ when all the times are in, use the keyword
 program will add to report.txt and print out the content 
 [project_#]    [porject_name]    [date_#yyyy mm dd]    [start_time]    [end_time]
 [aaa$id4443]    [front_end]    [1111/12/13]    [10:06am]    [9:23pm]
+
+
+
+
+
+
+
+
+- make cells; fuction to hand "padding" such that the cells look like 
+	|   foo    |
+here the "word" is bounded by 3 'space' padding 
+	|   word   |
+the total buffer between the pipes are 10 characters 
+the report should be formatted accodingly 
+-------------------------------------------------------------------------------
+|  project-name  |  time-start   |   time-stop    |    time-pent    |         |
+-------------------------------------------------------------------------------
+|   project-1   |    10:23am    |    3:29pm     |       5.1       |         |
+|               |               |               |                 |         |
+
+
+
+
+
+if space buffer is un even make the left side less thant the right  ->  |^^foob^^^|
+
+	$str-1 = "project-32"
+	$str-buff = format-buffer("str-1")
+	string = '|' + $str-buff  + '|'
+
+- each cell starts with a buffer of 5 spaces ^^^^^
+  when the space character are less than 2, inclese the buffer by 5 space characters 
+ |^^a^^|
+ |^aab^|
+ |^^^aabb^^^|
+ |^^aabbcc^^|
+
+
+
+
+
+
+
