@@ -36,47 +36,47 @@ get_date(){
 # echo "time --> $(get_time)"
 
 
-args=()
-clear_array() {
-	args=()
-	echo "Array cleared."
-}
+# args=()
+# clear_array() {
+# 	args=()
+# 	echo "Array cleared."
+# }
 
-show_array() {
-	echo "Session records:"
-	for i in "${args[@]}"; do
-		echo "$i"
-	done
-}
+# show_array() {
+# 	echo "Session records:"
+# 	for i in "${args[@]}"; do
+# 		echo "$i"
+# 	done
+# }
 
-save_array() {
-	printf "%s\n" "${args[@]}" > file.txt
-	echo "Array saved to file.txt"
-	exit 0
-}
+# save_array() {
+# 	printf "%s\n" "${args[@]}" > file.txt
+# 	echo "Array saved to file.txt"
+# 	exit 0
+# }
 
-while true; do
-	read -p "Enter input: " input
+# while true; do
+# 	read -p "Enter input: " input
 
-	case "$input" in
-		clear)
-			clear_array
-			;;
-		end)
-			echo "Script ended."
-			break
-			;;
-		show)
-			show_array
-			;;
-		save)
-			save_array
-			;;
-		*)
-			args+=("$input")
-			;;
-	esac
-done
+# 	case "$input" in
+# 		clear)
+# 			clear_array
+# 			;;
+# 		end)
+# 			echo "Script ended."
+# 			break
+# 			;;
+# 		show)
+# 			show_array
+# 			;;
+# 		save)
+# 			save_array
+# 			;;
+# 		*)
+# 			args+=("$input")
+# 			;;
+# 	esac
+# done
 
 
 

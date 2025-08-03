@@ -20,12 +20,18 @@ echo 'Welcome Corporate Slave <3<3'
 echo 'Use "[project_name] [start]" to start recording time:'
 
 while true; do
-	read -r alue
+	read -r value
+	
+	
+	
+	
 	if [[ "$value" == "end" ]]; then
 		break
 	fi
 	args+=("$value")
 	echo "entered -> $value <-"
+
+
 done
 
 date_generate

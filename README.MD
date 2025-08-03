@@ -37,10 +37,10 @@ program will add to report.txt and print out the content
 	|   foo    |
 here the "word" is bounded by 3 'space' padding 
 	|   word   |
-the total buffer between the pipes are 10 characters 
-the report should be formatted accodingly 
+the total buffer between the pipes are 10 characters
+the report should be formatted accodingly
 -------------------------------------------------------------------------------
-|  project-name  |  time-start   |   time-stop    |    time-pent    |         |
+| project-name  |  time-start   |  time-stop    |    time-pent    |         |
 -------------------------------------------------------------------------------
 |   project-1   |    10:23am    |    3:29pm     |       5.1       |         |
 |               |               |               |                 |         |
@@ -63,8 +63,14 @@ if space buffer is un even make the left side less thant the right  ->  |^^foob^
  |^^aabbcc^^|
 
 
+\\\*********
+after clocking in, users can use stack clock in times and the clockin recods can sort
+and derrive the clock out times
 
+	-------------------------------------------------------------------------------
+	|  project-name  |  time-start   |  time-stop    |    time-pent    |         |
+	-------------------------------------------------------------------------------
+	|   project-1    |    10:23am    |               |                 |         |
+	|   project-4    |    12:00pm    |               |                 |         |
 
-
-
-
+here the project is expected to end at 12 pm and the project 4 is to start tracting from 12 as well
